@@ -38,7 +38,7 @@
         <section class="courses-section" > <!--Seção de 4 quadrantes/artigos no conteúdo principal-->
 
             <div class="cards">
-                <article> <!--1ª quadrante - Piano Popular-->
+                <article class="card"> <!--1ª quadrante - Piano Popular-->
                     <img src="img/piano.png" alt="ícone de teclas de piano">
                     <strong>Piano popular</strong>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ratione, vitae sint et, error consequuntur.</p>
@@ -46,7 +46,7 @@
                         <img src="img/arrow-right.svg" alt="Ir para a página do curso">
                     </a>
                 </article>
-                <article> <!--2º quadrante - Teoria musical-->
+                <article class="card"> <!--2º quadrante - Teoria musical-->
                     <img src="img/clef.png" alt="ícone da clave de sol">
                     <strong>Teoria Músical</strong>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ratione, vitae sint et, error consequuntur.</p>
@@ -54,7 +54,7 @@
                         <img src="img/arrow-right.svg" alt="Ir para a página do curso">
                     </a>
                 </article>
-                <article> <!--3º quadrante - Sax alto-->
+                <article class="card"> <!--3º quadrante - Sax alto-->
                     <img src="img/sax.png" alt="ícone de teclas de saxfone">
                     <strong>Sax alto</strong>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ratione, vitae sint et, error consequuntur.</p>
@@ -62,7 +62,7 @@
                         <img src="img/arrow-right.svg" alt="Ir para a página do curso">
                     </a>
                 </article>
-                <article> <!--4º quadrante - Bateria-->
+                <article class="card"> <!--4º quadrante - Bateria-->
                     <img src="img/drums.png" alt="ícone de teclas de bateria">
                     <strong>Bateria</strong>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ratione, vitae sint et, error consequuntur.</p>
@@ -72,25 +72,27 @@
                 </article>
             </div>
 
-            <h2>E <span class="text-primary">vários</span> outros!</h2>
-            <a href="#">Conhecer os cursos</a>
+            <h2 class="text-center" >E <span class="text-primary">vários</span> outros!</h2>
+            <a href="#" class="button mt-1">Conhecer os cursos</a>
         </section>
     </main>
 
     <!--Início da 3º seção - Rodapé-->
     <footer>
-        <div> <!--Logo do rodapé-->
-            <img src="img/logo.svg" alt="Tom's Jazz School">
+        <div class="mt-1"> <!--Logo do rodapé-->
+            <img class="mb-1" src="img/logo.svg" alt="Tom's Jazz School">
+            <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sapiente itaque culpa, nostrum officia exercitationem.</p>
         </div>
-        <nav> <!--Navegação do cabeçalho-->
+        <nav class="mb-2"> <!--Navegação do cabeçalho-->
             <a href="#">Início</a>
             <a href="#">Cursos</a>
             <a href="#">Eventos</a>
             <a href="#">Contato</a>
         </nav>
-        <form action=""> <!--Formulário do rodapé-->
+        <form class="newletter-form"> <!--Formulário do rodapé-->
             <label for="email">Receba materias gratuitos no seu email</label>
             <input type="text" name="email" id="email" placeholder="Digite o seu email">
+            <button class="button mt-1 mb-2">Quero receber</button>
         </form>
     </footer>
 </body>
