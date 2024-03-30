@@ -43,6 +43,7 @@ header img {
 header nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 16px auto 0;
 }
 
 nav a {
@@ -198,20 +199,6 @@ footer nav a {
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Configurações específicas*/
 .mt-1 {
     margin-top: 16px;
@@ -242,3 +229,70 @@ footer nav a {
     text-align: center;
 }
 
+/*Responsividade*/
+
+@media  screen and  (min-width: 640px) {
+    .container nav {
+        display: block;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card:nth-child(2n) {
+        margin-top: 16px;
+    } 
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header img,
+    header nav, 
+    header .button {
+        margin: 0;
+    }
+
+}
+
+@media screen and (min-width: 1152px) {
+    .container {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 72rem;
+    }
+
+    .container.row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .about-column p {
+        font-size: 20px;
+        max-width: 256px;
+    }
+
+    .about-column {
+        flex: 2;
+    }
+
+    footer nav {
+        flex: 1;
+        padding-right: 100px;
+    }
+
+    .newletter-form {
+        flex: 3;
+    }
+
+    .newletter-form button {
+        margin-left: 0;
+    }
+}
